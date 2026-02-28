@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   reactStrictMode: false,
+  experimental: {
+    largePageDataBytes: 1024 * 1024 * 1024, // 1GB
+  },
 };
 
 export default nextConfig;
